@@ -1,0 +1,37 @@
+#+title: Emacs memo
+
+Emacs config from github.com/redguardtoo/emacs.d
+
+Check lisp/init-evil.el for frequently used keys
+
+* Customized vars
+- evil-symbol-word-search t
+- ibuffer-format
+
+* Common
+=C-h m= describe-mode
+=, x s= save-buffer
+=z z= evil-scroll-line-to-center
+
+* Coding
+=, g f= counsel-git (find file in git repo)
+=, i p= find-file-in-project
+=, g g= counsel-git-grep
+=, c f= counsel-grep (grep current buffer)
+
+=SPC j j=  scroll-other-window
+=SPC k k=  scroll-other-window
+=, b f= beginning-of-defun
+=, e f= end-of-defun
+=, g t= my-evil-goto-definition
+        (go to definition of first occurrence of symbol)
+
+=; ;= jump-char-2
+
+* IBuffer
+=o= visit-buffer-other-window
+=O= ibuffer-do-occur
+=,= change sorting
+
+* Copy/Paste in X11
+install xsel, on both local and remote, then ssh -Y
