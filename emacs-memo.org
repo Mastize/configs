@@ -9,29 +9,33 @@ Check lisp/init-evil.el for frequently used keys
 - ibuffer-format
 
 * Common
-=C-h m= describe-mode
-=, x s= save-buffer
-=z z= evil-scroll-line-to-center
+- =C-h m= describe-mode
+- =z z= evil-scroll-line-to-center
 
-* Coding
-=, g f= counsel-git (find file in git repo)
-=, i p= find-file-in-project
-=, g g= counsel-git-grep
-=, c f= counsel-grep (grep current buffer)
+* Editing
+- =, i p= find-file-in-project
+- =, c f= counsel-grep (grep current buffer)
+- =, r b= evilmr-replace-in-buffer
+- =, r v= my-rename-thing-at-point
 
-=SPC j j=  scroll-other-window
-=SPC k k=  scroll-other-window
-=, b f= beginning-of-defun
-=, e f= end-of-defun
-=, g t= my-evil-goto-definition
-        (go to definition of first occurrence of symbol)
+** Git
+- =, g f= counsel-git (find file in git repo)
+- =, g g= counsel-git-grep
+- =, g d= ffip-show-diff-by-description (show git diff)
+- =, g l= my-git-log-trace-definition (git diff current range)
+- =, t m= my-git-timemachine
 
-=; ;= jump-char-2
+** Movement
+- =, b f= beginning-of-defun
+- =, e f= end-of-defun
+- =, g t= my-evil-goto-definition
+          (go to definition of first occurrence of symbol)
+- =; ;= jump-char-2
 
 * IBuffer
-=o= visit-buffer-other-window
-=O= ibuffer-do-occur
-=,= change sorting
+- =o= visit-buffer-other-window
+- =O= ibuffer-do-occur
+- =,= change sorting
 
 * Copy/Paste in X11
 install xsel, on both local and remote, then ssh -Y
