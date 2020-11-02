@@ -2,24 +2,22 @@
 
 Emacs config from github.com/redguardtoo/emacs.d
 
+* General
 Check lisp/init-evil.el for frequently used keys
 
 * Customized vars
+- compile-command
 - evil-symbol-word-search t
 - ibuffer-format
 
-* Common
-- =C-h m= describe-mode
-- =z z= evil-scroll-line-to-center
-
 * Editing
-- =, i p= find-file-in-project
-- =, c f= counsel-grep (grep current buffer)
+- =, k k= find-file-in-project-by-selected
+- =, x x= expand-region
 - =, r b= evilmr-replace-in-buffer
 - =, r v= my-rename-thing-at-point
+- =, c f= counsel-grep (grep current buffer)
 
 ** Git
-- =, g f= counsel-git (find file in git repo)
 - =, g g= counsel-git-grep
 - =, g d= ffip-show-diff-by-description (show git diff)
 - =, g l= my-git-log-trace-definition (git diff current range)
@@ -30,12 +28,17 @@ Check lisp/init-evil.el for frequently used keys
 - =, e f= end-of-defun
 - =, g t= my-evil-goto-definition
           (go to definition of first occurrence of symbol)
+- =z z= evil-scroll-line-to-center
 - =; ;= jump-char-2
 
 * IBuffer
 - =o= visit-buffer-other-window
 - =O= ibuffer-do-occur
 - =,= change sorting
+
+* ivy-occur
+- =w= wgrep
+- =f= press (open file)
 
 * Copy/Paste in X11
 install xsel, on both local and remote, then ssh -Y

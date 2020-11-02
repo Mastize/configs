@@ -1,7 +1,7 @@
 # common  
+alias l='ls -F'
 alias ll='ls -lFh'
 alias la='ls -AlFh'
-alias l='ls -F'
 alias em='TERM=xterm-24bits emacs -nw'
 alias mk='make -j32'
 
@@ -9,4 +9,5 @@ alias mk='make -j32'
 alias gs='git status'
 alias gl='git log'
 
+# project
 alias ct='ctags -R -e --exclude=build .'
