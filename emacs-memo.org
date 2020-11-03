@@ -11,34 +11,36 @@ Check lisp/init-evil.el for frequently used keys
 - ibuffer-format
 
 * Editing
-- =, k k= find-file-in-project-by-selected
-- =, x x= expand-region
-- =, r b= evilmr-replace-in-buffer
-- =, r v= my-rename-thing-at-point
-- =, c f= counsel-grep (grep current buffer)
 
-** Git
-- =, g g= counsel-git-grep
-- =, g d= ffip-show-diff-by-description (show git diff)
-- =, g l= my-git-log-trace-definition (git diff current range)
-- =, t m= my-git-timemachine
+** Leader key
+- =x x= expand-region
+- =r b= evilmr-replace-in-buffer
+- =r v= my-rename-thing-at-point
 
-** Movement
-- =, b f= beginning-of-defun
-- =, e f= end-of-defun
-- =, g t= my-evil-goto-definition
-          (go to definition of first occurrence of symbol)
+*** Project
+- =k k= find-file-in-project-by-selected
+- =g g= counsel-git-grep
+- =g d= ffip-show-diff-by-description (show git diff)
+- =g l= my-git-log-trace-definition (git diff current range)
+- =t m= my-git-timemachine
+
+*** Movement
+- =b f= beginning-of-defun
+- =e f= end-of-defun
+- =g t= my-evil-goto-definition
+        (go to definition of first occurrence of symbol)
+
+** Others
 - =z z= evil-scroll-line-to-center
 - =; ;= jump-char-2
-
-* IBuffer
-- =o= visit-buffer-other-window
-- =O= ibuffer-do-occur
-- =,= change sorting
 
 * ivy-occur
 - =w= wgrep
 - =f= press (open file)
+
+* IBuffer
+- =o= visit-buffer-other-window
+- =O= ibuffer-do-occur
 
 * Copy/Paste in X11
 install xsel, on both local and remote, then ssh -Y
